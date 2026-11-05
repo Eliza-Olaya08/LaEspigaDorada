@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Espiga Dorada - Inventario</title>
+    <link rel="icon" type="image/png" href="C:\Users\FAMILIA OLAYA\Desktop\Programación\Laespigadorada_web\img\favicon.png">
+
+    <link rel="stylesheet" href="css/inventario.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>La Espiga Dorada</h1>
+
+        <p>Panes cálidos como el amor de mamá</p>
+
+    </header>
+
+    <main>
+
+        <h2>Inventario de ingredientes</h2>
+
+        <p>Administra las materias primas de nuestra panadería.</p>
+
+        <!-- Formulario para agregar ingredientes -->
+        <div class="formulario">
+
+            <h3>Registrar ingrediente</h3>
+
+            <label for="nombre">Nombre del ingrediente</label>
+            <input type="text" id="nombre" placeholder="Ej: Harina de trigo">
+
+            <label for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" placeholder="Ej: 25">
+
+            <label for="unidad">Unidad de medida</label>
+            <select id="unidad">
+                <option value="kg">Kilogramos (kg)</option>
+                <option value="g">Gramos (g)</option>
+                <option value="litros">Litros</option>
+                <option value="unidades">Unidades</option>
+            </select>
+
+            <button id="btnAgregar" type="button">Agregar ingrediente</button>
+
+            <button id="btnCancelar" type="button" style="display: none;">
+                Cancelar edición
+            </button>
+
+        </div>
+
+        <!-- Tabla del inventario -->
+        <div class="tabla">
+
+            <h3>Ingredientes registrados</h3>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Ingrediente</th>
+                        <th>Cantidad</th>
+                        <th>Unidad</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody id="listaIngredientes">
+                    <!-- JavaScript mostrará los ingredientes aquí -->
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <button id="btnVolver">Volver al menú</button>
+
+    </main>
+
+    <script src="js/inventario.js"></script>
+
+</body>
+</html>

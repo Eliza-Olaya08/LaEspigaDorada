@@ -1,0 +1,92 @@
+/* Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5ead8;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    background-color: #a66b27;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Contenido principal */
+main {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+main h2 {
+    color: #593d25;
+    margin-bottom: 15px;
+}
+
+main > p {
+    color: #94704b;
+    margin-bottom: 30px;
+}
+
+/* Catálogo */
+.catalogo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Tarjetas de productos */
+.producto {
+    background-color: white;
+    width: 220px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.producto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    color: #a66b27;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    color: #593d25;
+    font-weight: bold;
+}
+
+/* Botón */
+button {
+    background-color: #b77b32;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 35px;
+}
+
+button:hover {
+    background-color: #8f5c22;
+}

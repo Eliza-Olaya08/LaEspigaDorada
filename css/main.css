@@ -1,0 +1,106 @@
+
+/* Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5ead8;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    background-color: #a66b27;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Contenido principal */
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+main h2 {
+    color: #593d25;
+    margin-bottom: 15px;
+}
+
+main p {
+    color: #94704b;
+}
+
+/* Opciones */
+.opciones {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+/* Tarjetas */
+.tarjeta {
+    background-color: white;
+    width: 250px;
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Imágenes de las tarjetas */
+.tarjeta img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    color: #a66b27;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    margin-bottom: 20px;
+}
+
+/* Botones */
+button {
+    background-color: #b77b32;
+    color: white;
+
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8f5c22;
+}
+
+/* Botón cerrar sesión */
+#btnCerrar {
+    background-color: #75432b;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 600px) {
+    .opciones {
+        flex-direction: column;
+        align-items: center;
+    }
+}
